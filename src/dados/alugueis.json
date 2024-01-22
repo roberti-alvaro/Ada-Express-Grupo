@@ -1,0 +1,83 @@
+[
+    {
+        "cpfCliente": "44444444444",
+        "placaVeiculo": "DDD4444",
+        "nomeCliente": "Vlad",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-23T21:00:00.000Z",
+        "dataFim": "2023-11-24T13:00:00.000Z",
+        "numeroDaReserva": 2
+    },
+    {
+        "cpfCliente": "22222222222",
+        "placaVeiculo": "BBB2222",
+        "nomeCliente": "Mina",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-22T18:00:00.000Z",
+        "dataFim": "2023-11-25T13:00:00.000Z",
+        "numeroDaReserva": 3
+    },
+    {
+        "cpfCliente": "11111111111",
+        "placaVeiculo": "AAA1111",
+        "nomeCliente": "Lucy Westenra",
+        "tipoCarteiraCliente": "B",
+        "dataInicio": "2023-11-24T03:00:00.000Z",
+        "dataFim": "2023-12-10T15:00:00.000Z",
+        "numeroDaReserva": 4
+    },
+    {
+        "cpfCliente": "12345678910",
+        "placaVeiculo": "CDE1234",
+        "nomeCliente": "Alvaro",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-24T03:00:00.000Z",
+        "dataFim": "2023-11-25T15:30:00.000Z",
+        "numeroDaReserva": 5
+    },
+    {
+        "cpfCliente": "12345678910",
+        "placaVeiculo": "CDE1234",
+        "nomeCliente": "Alvaro",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-24T15:00:00.000Z",
+        "dataFim": "2023-11-25T15:00:00.000Z",
+        "numeroDaReserva": 6
+    },
+    {
+        "cpfCliente": "12345678910",
+        "placaVeiculo": "CDE1234",
+        "nomeCliente": "Alvaro",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-24T15:00:00.000Z",
+        "dataFim": "2023-11-25T15:30:00.000Z",
+        "numeroDaReserva": 7
+    },
+    {
+        "cpfCliente": "12345678911",
+        "placaVeiculo": "12345",
+        "nomeCliente": "Kali",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "24/11/2023, 12:00:00",
+        "dataFim": "25/11/2023, 12:00:00",
+        "numeroDaReserva": 8
+    },
+    {
+        "cpfCliente": "0987654321",
+        "placaVeiculo": "ABC9876",
+        "nomeCliente": "Dannyel",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-24T23:00:00.000Z",
+        "dataFim": "2023-11-25T23:00:00.000Z",
+        "numeroDaReserva": 9
+    },
+    {
+        "cpfCliente": "0987654321",
+        "placaVeiculo": "ABC9876",
+        "nomeCliente": "Dannyel",
+        "tipoCarteiraCliente": "A",
+        "dataInicio": "2023-11-26T15:00:00.000Z",
+        "dataFim": "2023-11-27T15:00:00.000Z",
+        "numeroDaReserva": 10
+    }
+]

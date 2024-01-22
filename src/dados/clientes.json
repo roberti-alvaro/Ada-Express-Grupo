@@ -1,0 +1,68 @@
+[
+    {
+        "cpf": "11111111111",
+        "nome": "Lucy Westenra",
+        "tipoCarteira": "B",
+        "veiculoAlugado": "AAA1111"
+    },
+    {
+        "cpf": "22222222222",
+        "nome": "Mina Murray",
+        "tipoCarteira": "A",
+        "veiculoAlugado": "BBB2222"
+    },
+    {
+        "cpf": "33333333333",
+        "nome": "Jonathan Harker",
+        "tipoCarteira": "B",
+        "veiculoAlugado": null
+    },
+    {
+        "cpf": "44444444444",
+        "nome": "Vlad",
+        "tipoCarteira": "A",
+        "veiculoAlugado": "DDD4444"
+    },
+    {
+        "cpf": "55555555555",
+        "nome": "Regina Falange",
+        "tipoCarteira": "A",
+        "veiculoAlugado": null
+    },
+    {
+        "cpf": "66666666666",
+        "nome": "Mike Wazowski",
+        "tipoCarteira": "B",
+        "veiculoAlugado": null
+    },
+    {
+        "cpf": "77777777777",
+        "nome": "Fulano",
+        "tipoCarteira": "A",
+        "veiculoAlugado": null
+    },
+    {
+        "cpf": "12345678910",
+        "nome": "Alvaro",
+        "tipoCarteira": "A",
+        "veiculoAlugado": "CDE1234"
+    },
+    {
+        "cpf": "12345678911",
+        "nome": "Kali",
+        "tipoCarteira": "A",
+        "veiculoAlugado": "12345"
+    },
+    {
+        "cpf": "0987654321",
+        "nome": "Dannyel",
+        "tipoCarteira": "A",
+        "veiculoAlugado": "ABC9876"
+    },
+    {
+        "cpf": "0987654991",
+        "nome": "Everton",
+        "tipoCarteira": "B",
+        "veiculoAlugado": null
+    }
+]

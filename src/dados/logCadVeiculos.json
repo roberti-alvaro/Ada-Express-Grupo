@@ -1,0 +1,21 @@
+[
+    {
+        "dataDoCadastroVeiculo": "21/01/2024, 20:36",
+        "placa": "OOOO-4848",
+        "tipoVeiculo": "moto",
+        "valorHora": 10,
+        "modelo": "CG",
+        "reservadoPor": null
+    },
+    {
+        "dataCadastroVeiculo": "22/01/2024, 08:09"
+    },
+    {
+        "dataCadastroVeiculo": "22/01/2024, 08:10",
+        "placa": "HHHH-4848",
+        "tipoVeiculo": "carro",
+        "valorHora": 20,
+        "modelo": "Uno",
+        "reservadoPor": null
+    }
+]
