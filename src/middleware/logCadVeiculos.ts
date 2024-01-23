@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { Veiculo } from "../models/veiculo";
+import { veiculoService } from "../services/veiculoService";
 const fs = require('fs')
 
 class LogCadVeiculosMiddleware {
@@ -13,7 +13,7 @@ class LogCadVeiculosMiddleware {
     const data = LogCadVeiculosMiddleware.DATE_FORMATTER.format(new Date())
     const veiculo = req.body
 
-    if (Veiculo.buscarVeiculoPorPlaca(veiculo.placa)) {
+    if (veiculoService.buscarVeiculoPorPlaca(veiculo.placa)) {
         next()
         return;
     }

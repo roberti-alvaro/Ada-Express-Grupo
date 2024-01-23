@@ -62,3 +62,7 @@ export class VeiculoService {
     // }
 
 }
+
+const veiculoService = new VeiculoService()
+
+export { veiculoService }

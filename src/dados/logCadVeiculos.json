@@ -17,5 +17,13 @@
         "valorHora": 20,
         "modelo": "Uno",
         "reservadoPor": null
+    },
+    {
+        "dataCadastroVeiculo": "23/01/2024, 19:29",
+        "placa": "YYYY-4848",
+        "tipoVeiculo": "carro",
+        "valorHora": 20,
+        "modelo": "Uno",
+        "reservadoPor": null
     }
 ]
