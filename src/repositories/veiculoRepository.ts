@@ -9,8 +9,12 @@ export class VeiculoRepository {
     adicionarVeiculo(veiculos: Array<TVeiculo>): void {
         fs.writeFileSync("./src/dados/veiculos.json", JSON.stringify(veiculos));
     }
-    
+
     registrarReservaNoVeiculo(veiculos: Array<TVeiculo>) {
+        fs.writeFileSync("./src/dados/veiculos.json", JSON.stringify(veiculos))
+    }
+
+    registrarDevolucaoNoVeiculo(veiculos: Array<TVeiculo>) {
         fs.writeFileSync("./src/dados/veiculos.json", JSON.stringify(veiculos))
     }
 }

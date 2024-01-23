@@ -15,7 +15,9 @@ export class AluguelController {
         return this.aluguelService.alugarVeiculo(novoAluguel);
     }
 
+    listarAlugueis() {
+        return this.aluguelService.listarAlugueis();
+    }
+    
     // devolverVeiculo()
-
-    // listarAlugueis()
 }
