@@ -13,4 +13,8 @@ export class ClienteRepository {
     registrarReservaNoCliente(clientes: Array<TCliente>) {
         fs.writeFileSync("./src/dados/clientes.json", JSON.stringify(clientes))
     }
+
+    registrarDevolucaoNoCliente(clientes: Array<TCliente>) {
+        fs.writeFileSync("./src/dados/clientes.json", JSON.stringify(clientes))
+    }
 }

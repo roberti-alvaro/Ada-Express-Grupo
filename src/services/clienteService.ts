@@ -48,4 +48,7 @@ export class ClienteService {
         this.clienteRepository.registrarReservaNoCliente(clientes)
     }
 
+    registrarDevolucaoNoCliente(clientes: Array<TCliente>) {
+        this.clienteRepository.registrarDevolucaoNoCliente(clientes)
+    }
 }
