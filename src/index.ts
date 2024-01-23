@@ -1,4 +1,4 @@
-import { Locadora } from "./models/locadora";
+// import { Locadora } from "./models/locadora";
 
-const locadora = new Locadora();
-locadora.menu();
+// const locadora = new Locadora();
+// locadora.menu();

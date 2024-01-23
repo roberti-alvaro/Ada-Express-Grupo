@@ -4,6 +4,8 @@ import { Veiculo } from './models/veiculo'
 import { Cliente } from './models/cliente';
 import { logCadVeiculosMiddleware } from './middleware/logCadVeiculos'
 import { validarDadosEntrada } from './middleware/validacao';
+import { VeiculoController } from './controllers/veiculoController';
+import { ClienteController } from './controllers/clienteController';
 
 const fs = require("fs");
 
@@ -12,41 +14,29 @@ const app = express()
 app.use(express.json())
 
 app.get('/veiculos', (req: Request, res: Response, next: NextFunction) => {
-    res.sendFile(path.resolve('./src/dados/veiculos.json'))
+    const veiculosDisponiveis = new VeiculoController().listarVeiculosDisponiveis();
+    res.status(200).send(veiculosDisponiveis);
+    return next();
 })
 
 app.use(logCadVeiculosMiddleware.execute)
 
 app.post('/veiculos', validarDadosEntrada, (req: Request, res: Response, next: NextFunction) => {
-
-    const veiculo = req.body
-
-    if (Object.keys(veiculo).length !== 0) {
-        const newVeiculo = new Veiculo(veiculo)
-
-        newVeiculo.adicionarVeiculo()
-
-        res.status(201).send(veiculo);
-        return next();
-    }
-
-    return console.log('Deu errado o cadastro');
-
+    const veiculoCriado = new VeiculoController().adicionarVeiculo(req);
+    res.status(201).send(veiculoCriado);
+    return next();
 })
 
 app.get('/clientes', (req: Request, res: Response, next: NextFunction) => {
-    res.sendFile(path.resolve('./src/dados/clientes.json'))
+    const clientes = new ClienteController().listarClientes();
+    res.status(200).send(clientes);
+    return next();
 })
 
 app.post('/clientes', (req: Request, res: Response, next: NextFunction) => {
-    const cliente = req.body
-
-    const newCliente = new Cliente(cliente)
-
-    newCliente.adicionarCliente()
-
-    res.status(201).send(cliente);
-    next();
+    const clienteCriado = new ClienteController().adicionarCliente(req)
+    res.status(201).send(clienteCriado);
+    return next();
 })
 
 
