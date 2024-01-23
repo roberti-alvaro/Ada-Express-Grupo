@@ -58,13 +58,6 @@ export class VeiculoService {
         this.veiculoRepository.registrarDevolucaoNoVeiculo(veiculos)
     }
 
-    // listarVeiculosAlugados(): Array<TVeiculo> {
-    //     const veiculos: Array<TVeiculo> = this.veiculoRepository.buscarVeiculos();
-    //     const veiculosAlugados = veiculos.filter(veiculo => veiculo.reservadoPor !== null)
-
-    //     return veiculosAlugados
-    // }
-
 }
 
 const veiculoService = new VeiculoService()

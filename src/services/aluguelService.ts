@@ -60,8 +60,8 @@ export class AluguelService {
     }
 
     registrarReserva(placaVeiculo: string, cpfCliente: string): void {
-        const veiculo = this.veiculoService.buscarVeiculoPorPlaca(placaVeiculo);
-        const cliente = this.clienteService.buscarClientePorCpf(cpfCliente);
+        // const veiculo = this.veiculoService.buscarVeiculoPorPlaca(placaVeiculo);
+        // const cliente = this.clienteService.buscarClientePorCpf(cpfCliente);
 
         const veiculos = this.veiculoService.buscarVeiculos();
         const indexVeiculo = veiculos.findIndex(veiculo => veiculo.placa === placaVeiculo)

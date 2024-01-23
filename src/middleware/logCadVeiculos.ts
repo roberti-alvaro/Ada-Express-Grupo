@@ -1,14 +1,10 @@
 import { NextFunction, Request, Response } from "express";
-<<<<<<< HEAD
 import { veiculoService } from "../services/veiculoService";
-=======
 import { Veiculo } from "../models/veiculo";
 import { VeiculoService } from "../services/veiculoService";
->>>>>>> 50c7c50cac2bb6964383fac9304ad597b2ea1d78
 const fs = require('fs')
 
 class LogCadVeiculosMiddleware {
-
   
   static DATE_FORMATTER = Intl.DateTimeFormat('pt-BR', {
     dateStyle: 'short',

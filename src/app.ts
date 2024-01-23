@@ -1,14 +1,10 @@
 import express, { NextFunction, Request, Response } from 'express'
 import path from 'path'
-import { Veiculo } from './models/veiculo'
-import { Cliente } from './models/cliente';
 import { logCadVeiculosMiddleware } from './middleware/logCadVeiculos'
 import { validarDadosEntrada } from './middleware/validacao';
 import { VeiculoController } from './controllers/veiculoController';
 import { ClienteController } from './controllers/clienteController';
 import { AluguelController } from './controllers/aluguelController';
-
-const fs = require("fs");
 
 const app = express()
 
