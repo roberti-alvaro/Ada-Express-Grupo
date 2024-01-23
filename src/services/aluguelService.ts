@@ -16,19 +16,23 @@ export class AluguelService {
         this.clienteService = new ClienteService();
     }
 
+    buscarAlugueis() {
+        return this.aluguelRepository.buscarAlugueis();
+    }
+
     buscarAluguelPorNumeroDaReserva(numeroDaReserva: number): TAluguel | undefined {
-        const alugueis = this.aluguelRepository.buscarAlugueis();
+        const alugueis = this.buscarAlugueis();
         return alugueis.find(aluguel => aluguel.numeroDaReserva === numeroDaReserva)
     }
     buscarAluguelPorCpf(cpf: string): TAluguel | undefined {
-        const alugueis = this.aluguelRepository.buscarAlugueis();
+        const alugueis = this.buscarAlugueis();
         return alugueis.find(aluguel => aluguel.cpfCliente === cpf)
     }
 
     alugarVeiculo(aluguel: TAluguel): void {
         const veiculo = this.veiculoService.buscarVeiculoPorPlaca(aluguel.placaVeiculo);
         const cliente = this.clienteService.buscarClientePorCpf(aluguel.cpfCliente);
-        const alugueis = this.aluguelRepository.buscarAlugueis();
+        const alugueis = this.buscarAlugueis();
 
         if (veiculo?.reservadoPor === null && cliente?.veiculoAlugado === null) {
             if ((cliente.tipoCarteira === "A" && veiculo.tipoVeiculo === "moto") ||
@@ -71,6 +75,10 @@ export class AluguelService {
         this.clienteService.registrarReservaNoCliente(clientes);
     }
 
+    listarAlugueis(): Array<TAluguel> {
+        return this.buscarAlugueis();
+    }
+
     devolverVeiculo(placaVeiculo: string, cpfCliente: string) {
         const veiculos = this.veiculoService.buscarVeiculos();
         const indexVeiculo = veiculos.findIndex(veiculo => veiculo.placa === placaVeiculo)
@@ -82,17 +90,15 @@ export class AluguelService {
         if (veiculo && cliente) {
             veiculo.reservadoPor = null
             veiculos.splice(indexVeiculo, 1, veiculo)
-            // registrarDevolucaoNoVeiculo()
-            // fs.writeFileSync("./src/dados/veiculos.json", JSON.stringify(veiculos))
+            this.veiculoService.registrarDevolucaoNoVeiculo(veiculos)
             cliente.veiculoAlugado = null
             clientes.splice(indexCliente, 1, cliente)
-            // registrarDevolucaoNoCliente()
-            // fs.writeFileSync("./src/dados/clientes.json", JSON.stringify(clientes))
+            this.clienteService.registrarDevolucaoNoCliente(clientes)
 
             console.log('Operação concluída!');
 
         } else {
-            console.error('Veiculo e/ou cliente não existe.');
+            throw new Error('Veiculo e/ou cliente não existe.');
         }
 
     }

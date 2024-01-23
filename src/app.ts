@@ -6,6 +6,7 @@ import { logCadVeiculosMiddleware } from './middleware/logCadVeiculos'
 import { validarDadosEntrada } from './middleware/validacao';
 import { VeiculoController } from './controllers/veiculoController';
 import { ClienteController } from './controllers/clienteController';
+import { AluguelController } from './controllers/aluguelController';
 
 const fs = require("fs");
 
@@ -37,6 +38,16 @@ app.post('/clientes', (req: Request, res: Response, next: NextFunction) => {
     const clienteCriado = new ClienteController().adicionarCliente(req)
     res.status(201).send(clienteCriado);
     return next();
+})
+
+app.get('/alugueis', (req: Request, res: Response, next: NextFunction) => {
+    const alugueis = new AluguelController().listarAlugueis();
+    res.status(200).send(alugueis);
+})
+
+app.post('/alugueis', (req: Request, res: Response, next: NextFunction) => {
+    const aluguelCriado = new AluguelController().alugarVeiculo(req);
+    res.status(201).send(aluguelCriado);
 })
 
 
