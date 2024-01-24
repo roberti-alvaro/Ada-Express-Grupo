@@ -9,6 +9,9 @@ export class VeiculoController {
     constructor() {
         this.veiculoService = new VeiculoService();
     }
+    buscarVeiculos() {
+        return this.veiculoService.buscarVeiculos()
+    }
 
     adicionarVeiculo(req: Request) {
         const novoVeiculo = new Veiculo(req.body);

@@ -4,13 +4,6 @@
         "tipoVeiculo": "carro",
         "valorHora": 15,
         "modelo": "Jeep Renegade",
-        "reservadoPor": null
-    },
-    {
-        "placa": "AAAA-4848",
-        "tipoVeiculo": "carro",
-        "valorHora": 15,
-        "modelo": "Jeep Compass",
-        "reservadoPor": null
+        "reservadoPor": "11111111111"
     }
 ]

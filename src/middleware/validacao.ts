@@ -12,8 +12,7 @@ const validarDadosEntrada = (
     placa === undefined ||
     tipoVeiculo === undefined ||
     valorHora === undefined ||
-    modelo === undefined ||
-    reservadoPor === undefined
+    modelo === undefined
   ) {
     return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
   }
@@ -23,8 +22,7 @@ const validarDadosEntrada = (
     typeof placa !== 'string' ||
     typeof tipoVeiculo !== 'string' ||
     typeof valorHora !== 'number' ||
-    typeof modelo !== 'string' ||
-    (reservadoPor !== null && typeof reservadoPor !== 'string')
+    typeof modelo !== 'string'
   ) {
     return res.status(400).json({ error: 'Formato inválido para um ou mais campos' });
   }

@@ -12,5 +12,4 @@ export class Aluguel {
         this.dataFim = novoAluguel.dataFim
 
     }
-
 }

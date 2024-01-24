@@ -11,14 +11,12 @@ const app = express()
 app.use(express.json())
 
 app.get('/veiculos', (req: Request, res: Response, next: NextFunction) => {
-    const veiculosDisponiveis = new VeiculoController().listarVeiculosDisponiveis();
+    const veiculosDisponiveis = new VeiculoController().buscarVeiculos();
     res.status(200).send(veiculosDisponiveis);
     return next();
 })
 
-app.use(logCadVeiculosMiddleware.execute)
-
-app.post('/veiculos', validarDadosEntrada, (req: Request, res: Response, next: NextFunction) => {
+app.post('/veiculos', validarDadosEntrada, logCadVeiculosMiddleware.execute, (req: Request, res: Response, next: NextFunction) => {
     const veiculoCriado = new VeiculoController().adicionarVeiculo(req);
     res.status(201).send(veiculoCriado);
     return next();
@@ -45,6 +43,7 @@ app.post('/alugueis', (req: Request, res: Response, next: NextFunction) => {
     const aluguelCriado = new AluguelController().alugarVeiculo(req);
     res.status(201).send(aluguelCriado);
 })
+
 
 
 app.listen(3000, () => {

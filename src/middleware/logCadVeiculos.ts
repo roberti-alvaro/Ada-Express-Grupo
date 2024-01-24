@@ -1,6 +1,4 @@
 import { NextFunction, Request, Response } from "express";
-import { veiculoService } from "../services/veiculoService";
-import { Veiculo } from "../models/veiculo";
 import { VeiculoService } from "../services/veiculoService";
 const fs = require('fs')
 
