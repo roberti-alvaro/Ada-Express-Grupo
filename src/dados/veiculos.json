@@ -1,9 +1,1 @@
-[
-    {
-        "placa": "AAA1111",
-        "tipoVeiculo": "carro",
-        "valorHora": 15,
-        "modelo": "Jeep Renegade",
-        "reservadoPor": "11111111111"
-    }
-]
+[{"placa":"AAA1111","tipoVeiculo":"carro","valorHora":15,"modelo":"Jeep Renegade","reservadoPor":"11111111111"},{"placa":"SSSS-8888","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650","reservadoPor":"22222222222"}]

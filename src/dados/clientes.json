@@ -4,5 +4,11 @@
         "nome": "Lucy Westenra",
         "tipoCarteira": "B",
         "veiculoAlugado": "AAA1111"
+    },
+    {
+        "cpf": "22222222222",
+        "nome": "Ah Driano",
+        "tipoCarteira": "A",
+        "veiculoAlugado": "SSSS-8888"
     }
 ]

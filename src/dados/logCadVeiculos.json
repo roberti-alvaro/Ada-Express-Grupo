@@ -6,5 +6,12 @@
         "valorHora": 15,
         "modelo": "Jeep Compass",
         "reservadoPor": null
+    },
+    {
+        "dataCadastroVeiculo": "24/01/2024, 19:31",
+        "placa": "SSSS-8888",
+        "tipoVeiculo": "moto",
+        "valorHora": 5,
+        "modelo": "BMW GS 650"
     }
 ]
