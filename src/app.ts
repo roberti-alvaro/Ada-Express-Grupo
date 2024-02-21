@@ -25,8 +25,8 @@ app.use(helmet())
 
 app.use(morgan('[:date[clf]] ":method :url" :status :res[content-length]'));
 
-app.get('/veiculos', (req: Request, res: Response, next: NextFunction) => {
-    const veiculosDisponiveis = new VeiculoController().buscarVeiculos();
+app.get('/veiculos', async (req: Request, res: Response, next: NextFunction) => {
+    const veiculosDisponiveis = await new VeiculoController().buscarVeiculos();
     res.status(200).send(veiculosDisponiveis);
     return next();
 })

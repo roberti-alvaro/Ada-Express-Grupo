@@ -10,8 +10,16 @@ export class VeiculoController {
     constructor() {
         this.veiculoService = new VeiculoService();
     }
-    buscarVeiculos() {
-        return this.veiculoService.buscarVeiculos()
+    async buscarVeiculos() {
+    const veiculos = await veiculoModel.findAll();
+    return veiculos.map(item => {
+      return {
+        placa: item.dataValues.placa,
+        tipoVeiculo: item.dataValues.tipoVeiculo,
+        valorHora: item.dataValues.valorHora,
+        modelo: item.dataValues.modelo
+      }
+    });
     }
 
     async adicionarVeiculo(req: Request) {
