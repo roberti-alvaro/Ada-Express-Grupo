@@ -1,17 +1,1 @@
-[
-    {
-        "dataCadastroVeiculo": "23/01/2024, 20:46",
-        "placa": "AAAA-4848",
-        "tipoVeiculo": "carro",
-        "valorHora": 15,
-        "modelo": "Jeep Compass",
-        "reservadoPor": null
-    },
-    {
-        "dataCadastroVeiculo": "24/01/2024, 19:31",
-        "placa": "SSSS-8888",
-        "tipoVeiculo": "moto",
-        "valorHora": 5,
-        "modelo": "BMW GS 650"
-    }
-]
+[{"dataCadastroVeiculo":"23/01/2024, 20:46","placa":"AAAA-4848","tipoVeiculo":"carro","valorHora":15,"modelo":"Jeep Compass","reservadoPor":null},{"dataCadastroVeiculo":"24/01/2024, 19:31","placa":"SSSS-8888","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:07","placa":"SSSS-8821","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:08","placa":"SSSS-9873","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:12","placa":"SSSS-9873","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:16","placa":"SSSS-9873","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:22","placa":"SSSS-9873","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:27","placa":"SSSS-0000","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:30","placa":"SSSS-0002","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:30","placa":"SSSS-0004","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:45","placa":"SSSS-0019","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:48","placa":"SSSS-2222","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 21:57","placa":"SSSS-6666","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"},{"dataCadastroVeiculo":"20/02/2024, 22:03","placa":"AAAA-1111","tipoVeiculo":"moto","valorHora":5,"modelo":"BMW GS 650"}]

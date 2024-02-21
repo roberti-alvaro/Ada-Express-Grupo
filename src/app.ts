@@ -1,5 +1,9 @@
+import dotenv from "dotenv";
+dotenv.config()
+const cors = require('cors')
+var morgan = require('morgan')
+import helmet from "helmet";
 import express, { NextFunction, Request, Response } from 'express'
-import path from 'path'
 import { logCadVeiculosMiddleware } from './middleware/logCadVeiculos'
 import { validarDadosEntrada } from './middleware/validacao';
 import { VeiculoController } from './controllers/veiculoController';
@@ -10,6 +14,17 @@ const app = express()
 
 app.use(express.json())
 
+app.use(cors({
+    origin: [
+      'http://127.0.0.1:5501',
+      'http://localhost:5501'
+    ]
+  }))
+
+app.use(helmet())
+
+app.use(morgan('[:date[clf]] ":method :url" :status :res[content-length]'));
+
 app.get('/veiculos', (req: Request, res: Response, next: NextFunction) => {
     const veiculosDisponiveis = new VeiculoController().buscarVeiculos();
     res.status(200).send(veiculosDisponiveis);
@@ -17,8 +32,8 @@ app.get('/veiculos', (req: Request, res: Response, next: NextFunction) => {
 })
 
 app.post('/veiculos', validarDadosEntrada, logCadVeiculosMiddleware.execute, (req: Request, res: Response, next: NextFunction) => {
-    const veiculoCriado = new VeiculoController().adicionarVeiculo(req);
-    res.status(201).send(veiculoCriado);
+    new VeiculoController().adicionarVeiculo(req);
+    res.status(201).send();
     return next();
 })
 
